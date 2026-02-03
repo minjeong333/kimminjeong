@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국주택금융공사사이트</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            /* border: solid 1px blue; */
+            /* background-color:rgb(238, 247, 250); */
+            width: 100%;
+            min-height: 800px; /*최소 높이*/
+            padding-top: 60px;
+        }
+        .origin{
+            /* border : 2px solid green; */
+            color: gray;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        h1{
+            color: turquoise;
+        }
+        .mainment{
+            display: flex;
+            justify-content: center;
+            color: black;
+            margin-top: 40px ;
+            margin-bottom: 20px;
+        }
+        span{
+            color: black;
+        }
+        .box1, .box2, .box3{
+            border: 1px solid red;
+            background-color: white;
+            width: 300px;
+            height: 500px;
+            padding: 20px;
+        }
+        .box1:hover, .box2:hover, .box3:hover{
+            /* transform: scale(1.05); 전체 1.2배 확대 */
+            transform: translateY(-15px);
+            box-sizing: border-box; /* ⭐가로사이즈에 테두리까지 포함(실무에서 더 많이 쓰임 > 14번) */
+            margin: 10px; /* 바깥 여백 */
+            box-shadow: 0 20px 40px lightgrey;
+            ;
+        }
+        .origin img{
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+        }
+/* ----- 푸터 css 시작 ---------------------------------------*/
+        .box4, .box5{
+            display: block;
+        }
+        .box4 button{
+            background-color: white;
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+            margin: 10px;
+        }
+        .box5 p{
+            margin-left: 10px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="" alt=""></a>
+        </div>
+        <div class="nav">
+            <a href="">[보금자리론 신청방법]</a>
+            <a href="">[주택연금 신청방법]</a>
+            <a href="">[변환보증이행 신청방법]</a>
+            <button>로그인</button>
+            <button>인증/보안</button>
+        </div>
+        <div class="nav2">
+            <a href="">My HF</a>
+            <a href="">신청</a>
+            <a href="">간편 서류제출</a>
+            <a href="">고객서비스</a>
+        </div>
+        <div class="symbol">
+            <!-- 메뉴조회, 용어 사전, 전체 메뉴얼 열기 아이콘 넣기 -->
+            <div class="s1"><img src="" alt=""></div> 
+            <div class="s2"><img src="" alt=""></div>
+            <div class="s3"><img src="" alt=""></div>
+        </div>
+    </header>
+    <!-- ---------------------------------------------------------------------------------------------- -->
+     <div class="container">
+        <h1 class="mainment"><strong>국민과 함께 성장하는 글로벌 주택금융 리더</strong></h1>
+      <div class="origin">
+        <div class="box1">
+            <h1><span>아낌e 보금자리론</span></h1>
+            <p>0.1%p 더 저렴한 금리</p>
+            <br>
+            <h1><small>최대</small><br>
+            주택가격 6억원</h1>
+            <p><br><br><br><img src="../images/house.webp" alt="" width="200"></P>
+        </div>
+
+        <div class="box2">
+            <h1><span>u-보금자리론</span></h1>
+            <p>우리 가족의 소중한 보금자리 마련</p>
+            <br>
+            <h1><small>최대</small><br>
+            대출한도 3.6억원</h1>
+            <P><br><br><br><img src="../images/house.webp" alt="" width="200"></P>
+        </div>
+
+        <div class="box3">
+            <h1><span>내집마련 디딤돌</span></h1>
+            <p>내 집 마련 꿈의 실현</p>
+            <br>
+            <h1><small>무주택 세대주 대상</small><br>
+            저금리<br>
+            주택구입자금 대출</h1>
+            <P><br><br><img src="../images/house.webp" alt="" width="200"></P>
+        </div>
+      </div>
+     </div>
+   
+    <!-- 푸터 시작 -->
+     <hr>
+     <footer>
+        <div class="box4">
+            <a href="#">개인정보처리방침</a>
+            <a href="#">인터넷업무시스템</a>
+            <a href="#">대출모집인(아낌e상담원)</a>
+            <a href="#">본사 및 지사 찾기</a>
+            <a href="#">서식자료실</a>
+            <a href="#">증명서 진위 여부</a>
+            <a href="#">프로그램 설치</a>
+            <button>한국주택금융공사 홈페이지</button>
+        </div>
+        <div class="box5"><br>
+           <p>부산시 남구 문현금융로40(문현동) 부산국제금융센터 한국주택금융공사</p>
+        </div>
+     </footer>
+</body>
+</html>

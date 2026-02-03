@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭버튼 css</title>
+    <style>
+        input[name='tab-group']{
+            display: none;
+        }
+        .tab-button{
+            display: inline-block;
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            /* cursor: pointer; */
+            background-color: #eee;
+            color: #ccc;
+            border: 1px solid #ccc;
+            border-top-left-radius: 10%;
+            border-top-right-radius: 10px;
+        }
+        .tab-button:hover{
+            /* transform: scaleY(1.05);
+            transition: all 0.2s; 
+            transform-origin: 0 100%; */
+        }
+        .tab-content{
+            border: 5px solid #333;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 420px;
+            padding: 20px;
+            margin-top: 8px;
+            display: none;
+        }
+        /* 체크된 라디오 버튼의 '다음'라벨 스타일 변경 */
+        input#tab1:checked + label, 
+        input#tab2:checked + label, 
+        input#tab3:checked + label{
+            background-color: #555;
+            color: #eee;
+            transform: scaleY(1.2);
+            transition: all 0.2s; 
+            transform-origin: 0 100%;
+
+        } 
+        /* 체크된 라디오 버튼의 '형제' 중 해당 컨텐츠만 보여준다 */
+        #tab1:checked ~ #content1, 
+        #tab2:checked ~ #content2, 
+        #tab3:checked ~ #content3{
+            transform-origin: 0 100%;
+            display: block;
+            box-shadow: 10px 10px 0px darkgray;
+            animation: size 2s ;
+        } 
+        @keyframes size {
+            from{
+                transform: scale(0.98)
+            }to{
+                transfrom: scale:(1.0);
+                transition: all 0.1s; 
+                transform-origin: 10% 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <!-- 라디오 버튼 그룹 (동일한 name을 가져야 함) -->
+         <input type="radio" name="tab-group" id="tab1" checked>
+         <label for="tab1" class="tab-button">Tab One</label>
+
+         <input type="radio" name="tab-group" id="tab2" >
+         <label for="tab2" class="tab-button">Tab Two</label>
+
+         <input type="radio" name="tab-group" id="tab3" >
+         <label for="tab3" class="tab-button">Tab Three</label>
+    
+        <!-- 탭 내용들 (라디오 버튼들과 형제 관계여야) -->
+         <div id="content1" class="tab-content">
+            <h3>탭 1의 제목</h3>
+            <pre>111111탭 내용입니다.</pre>
+         </div>
+         <div id="content2" class="tab-content">
+            <h3>탭 2의 제목</h3>
+            <pre>222222탭 내용입니다.</pre>
+         </div>
+         <div id="content3" class="tab-content">
+            <h3>탭 3의 제목</h3>
+            <pre>333333탭 내용입니다.</pre>
+         </div>
+     </div>
+</body>
+</html>

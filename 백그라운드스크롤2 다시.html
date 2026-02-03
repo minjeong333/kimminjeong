@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백그라운드스크롤2</title>
+    <style>
+        /* 와일드 카드 문자( * ) : 전체 선택 */
+        *{ 
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        h3{
+            font-size: 70px;
+            font-weight: 800; /* 글자의 두께 */
+            line-height: 700px; /* 줄간격 */
+            text-align: center;
+            color: aliceblue;
+        }
+        .section1{
+            height: 700px;
+            background: url(../images/whiteflower.jpg) no-repeat 50% 0/cover fixed;
+            /* background-size: cover;*/
+            /* 50% 0의 의미:
+                 X축 50%(가운데), Y축 0(top 맨 위에) 
+               background-attachment: fixed;
+             */
+        }
+        .section2{
+            background: url(../images/cherryblossom.jpg) no-repeat 50% 0 scroll;
+            background-size: cover;
+        }
+        .section3{
+            background: url(../images/tulip.jpg) no-repeat 50% 0 scroll;
+            background-size: cover;
+        }
+        .section4{
+            background: url(../images/orange\ flower.jpg) no-repeat 50% 0 scroll;
+            background-size: cover;
+        }
+        .section5{
+            background: url(../images/rose.jpg) no-repeat 50% 0 scroll;
+            background-size: cover;
+        }
+        .parents{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+
+        }
+        .parents > div{
+            border: 1px solid;
+            padding: 10px;            
+            text-align: center;
+            background-color: aliceblue;
+        }
+        h2{
+            text-align: left;
+            margin-top: 0;
+            color: dodgerblue;
+        }
+        img{
+            display: block;
+            margin: 10px auto;
+            width: 300px;
+            height: 300px;
+        }
+        /* 🟠nav */
+        nav{
+            padding-top: 40px;
+            width: 100%;
+            height: 120px;
+            border: 1px solid red;
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+            width: 400;
+        }
+        li{
+            display: inline-block;
+            border: solid 1px darkgray; /*박스 테두리 실선*/
+            margin: 0; 
+            padding: 0;
+        }
+        a{
+            display: block;
+            text-decoration: none; /*a태그 기본 꾸미기 속성을 없애줌*/
+            background-color: black;
+            color: white;
+            padding: 10px 25px;
+        }
+        a:hover{
+            background-color: aliceblue;
+            color: skyblue;
+        }
+        .parents{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- section1 id를 추가하지 않으면 새로고침시 section2를 찾아감 -->
+        <section class="section1" id="section1">
+            <nav>
+                <h3>1F</h3>
+              <ul> 
+                 <li><a href="#section2">2F</a></li> 
+                 <li><a href="#section3">3F</a></li>
+                 <li><a href="#section4">4F</a></li>
+                 <li><a href="#section5">5F</a></li>
+              </ul> 
+            </nav>
+        </section>
+        <section class="section2" id="section2">
+            <h3>2F</h3>
+        </section>
+        <section class="section3" id="section3">
+            <h3>3F</h3>
+        </section>
+        <section class="section4" id="section4">
+            <h3>4F</h3>
+        </section>
+        <section class="section5" id="section5">   
+              <div class="parents">
+                  <div class="box box1">
+                  <h2>한식</h2>
+                  <img src="../images/한식.jpg" alt="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Enim odio neque nobis eius quibusdam repellendus pariatur ab delectus accusamus 
+                  placeat veniam in officiis fugit dolorum error vero, consectetur sapiente totam.
+                  </div> 
+                  <div class="box box2">
+                  <h2>중식</h2>
+                  <img src="../images/중식.webp" alt="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Enim odio neque nobis eius quibusdam repellendus pariatur ab delectus accusamus 
+                  placeat veniam in officiis fugit dolorum error vero, consectetur sapiente totam.        
+                  </div>
+                  <div class="box box3">
+                  <h2>일식</h2>
+                  <img src="../images/일식.avif" alt="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Enim odio neque nobis eius quibusdam repellendus pariatur ab delectus accusamus 
+                  placeat veniam in officiis fugit dolorum error vero, consectetur sapiente totam.            
+                  </div>
+                  <div class="box box4">
+                  <h2>양식</h2>
+                  <img src="../images/양식.avif" alt="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Enim odio neque nobis eius quibusdam repellendus pariatur ab delectus accusamus 
+                  placeat veniam in officiis fugit dolorum error vero, consectetur sapiente totam.
+                  </div>
+                  <div class="box box5">
+                  <h2>패스트푸드</h2>
+                  <img src="../images/패스트푸드.jpg" alt="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Enim odio neque nobis eius quibusdam repellendus pariatur ab delectus accusamus 
+                  placeat veniam in officiis fugit dolorum error vero, consectetur sapiente totam.
+                  </div>
+                  <div class="box box6">
+                  <h2>카페</h2>
+                  <img src="../images/커피.webp" alt="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Enim odio neque nobis eius quibusdam repellendus pariatur ab delectus accusamus 
+                  placeat veniam in officiis fugit dolorum error vero, consectetur sapiente totam.
+                  </div>
+        </section>
+        </section>
+        <a href="#" class="top">맨 위로</a>
+        </section>
+
+    </div>
+</body>
+</html>
