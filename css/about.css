@@ -112,35 +112,30 @@ header {
     border-radius: 20px;
     box-shadow: 5px 5px 5px lightgray;
 }
+
 .intro-text h3{
   border: 2px solid gray;
   width: 100px;
   font-weight: bold;
-  padding-left: 35px;
+  text-align: center;
   border-radius: 20px;
-  margin-bottom: 1rem;  .intro-text ul {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
-      list-style: none;
-      padding: 0;
+  margin-bottom: 1rem;  
   }
-  .intro-text li img{
-    width: 100%;
-    height: auto;
+
+  .intro-text h4{
+  border: 2px solid gray;
+  width: 100px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 1rem;  
   }
-}
-.intro-text ul {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    list-style: none;
-    padding-left: 5px;
-}
-.intro-text li img{
-  width: 100%;
-  height: auto;
-}
+
+  .skill-item img{
+    width: 30px;
+    height: 40px;
+  }
+
 
 
 /*테블릿 최소 768px*/
@@ -154,13 +149,10 @@ header {
     font-weight: bold;
     text-align: center;
   }
-  .intro-text ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-  /* .intro-text li img{
-  width: 30%;
-  margin-left: 50px;
-} */
+  .skill-item img{
+  width: 40px;
+  height: 50px;
+  }
 }
 
 /* 데스크탑 최소 1024px */
@@ -168,41 +160,11 @@ header {
   .menu-toggle-btn {
     display: none;
   }
-   .intro-text ul {
-        grid-template-columns: repeat(3, 1fr);
-    }    .skill {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-    
-    .skill-item {
-      flex: 1;
-      text-align: center;
-    }
-    
-    .skill-item img{
-      width: 100%;
-      max-width: 100px;
-      height: auto;
-      display: block;
-      margin: 0 auto 10px;
-    }
-    .skill {
-      display: flex;
-      flex-direction: column ;
-      gap: 20px
-    }
     .skill-item img{
       width: 60px;
-      height: 60px;
-      flex-shrink: 0;
+      height: 70px;
     }
-    .skill-item{
-      display: flex;
-    }
-     .nav {
+    .nav {
     display: block;
     position: static;
     background: none;
@@ -215,19 +177,15 @@ header {
     top: 1.5rem;
     right: 2rem;
   }
-
   .nav li {
     margin-left: 1.5rem;
-    /* margin-right: 0; */
+    margin-right: 0;
     padding: 0;
-    border-bottom: none;
   }
-  
   .nav a {
     color: #fff;
     font-size: 0.95rem;
   }
-
   nav.is-open {
     display: block;
   }
