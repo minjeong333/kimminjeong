@@ -125,7 +125,6 @@ header {
       list-style: none;
       padding: 0;
   }
-  
   .intro-text li img{
     width: 100%;
     height: auto;
@@ -203,21 +202,13 @@ header {
     .skill-item{
       display: flex;
     }
-}
-    .skill-item li{
-      text-align: left;
-      line-height: 1.5;
-    }
-
-  /* 네이게이션 바 */
-  .nav {
+     .nav {
     display: block;
     position: static;
     background: none;
     width: auto;
     opacity: 1;
   }
-
   .nav ul {
     display: flex;
     position: absolute;
@@ -227,7 +218,7 @@ header {
 
   .nav li {
     margin-left: 1.5rem;
-    margin-right: 0;
+    /* margin-right: 0; */
     padding: 0;
     border-bottom: none;
   }
@@ -240,4 +231,12 @@ header {
   nav.is-open {
     display: block;
   }
+
+}
+    
+
+
+ 
+
+  
 
