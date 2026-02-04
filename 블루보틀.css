@@ -31,7 +31,7 @@ a:hover{
 
 /* 메인 부분 시작 */
 main{
-    background-image: url(../images/coffee.jpg);
+    background-image: url(./images/coffee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
